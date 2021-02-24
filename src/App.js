@@ -7,6 +7,7 @@ const PortfolioContainer = styled.div`
 color:#111;
 font-family: IBM Plex Sans,sans-serif;
 
+
 `;
 
 function App() {

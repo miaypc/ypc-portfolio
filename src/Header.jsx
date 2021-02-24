@@ -5,8 +5,9 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import EmailIcon from '@material-ui/icons/Email';
 
 const HeaderConatiner = styled.div`
-max-width:1100px;
+padding-left:20px;
 margin:0 auto;
+max-width:1000px;
 `;
 
 const LogosContainer = styled.div`
@@ -16,10 +17,6 @@ padding:20px 10px;
 `;
 
 const Intro = styled.div`
-padding: 80px 60px 60px 40px;
-@media (max-width: 800px){
-  padding: 20px 10px;
-}
 `;
 
 const Name = styled.h1`

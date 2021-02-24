@@ -25,11 +25,15 @@ top:50px;
 `;
 const MainContainer = styled.div`
 position:relative;
-padding:100px 50px;
+padding:30px 50px;
 max-width:1000px;
-margin:0 auto;
 display:flex;
 flex-direction: column;
+margin:0 auto;
+max-width:1000px;
+@media (max-width: 800px){
+    padding-bottom:0;
+}
 `;
 //footer
 const FooterConatiner = styled.div`
@@ -39,6 +43,7 @@ margin:120px 0 0 0;
 display:flex;
 align-items: center;
 justify-content: center;
+
 `;
 const FooterText = styled.p`
 color:white;
@@ -50,10 +55,7 @@ text-decoration:none;
 cursor:pointer;
 `;
 function Main(){
-    // &:hover ${ProjectsNumberContainer}{
-//     background-color:#d2818f;
-//     color: white;
-// };
+
     return(
         <React.Fragment>  
              <MainContainer>
@@ -68,6 +70,10 @@ function Main(){
                         detail={e.detail}
                         demo={e.demo}
                         github={e.github}
+                        companyLink={e.companyLink}
+                        apiLink={e.apiLink}
+                        api={e.api}
+                        detail2={e.detail2}
                       />
                     )
                 })}

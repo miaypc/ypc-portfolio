@@ -12,6 +12,7 @@ margin-top:100px;
 @media (max-width: 800px){
 flex-direction: column;
 align-items: flex-start;
+margin-top:50px
 }
 `;
 const ProjectsNumberContainer = styled.div`
@@ -63,13 +64,13 @@ margin-left:0
 `;
 const PorjectTechnologies = styled.p`
 color:#565656;
-font-size:14px;
+font-size:16px;
 margin-bottom:0;
 `;
 
 //Content
 const ProjectContentContainer = styled.div`
-padding:25px 0;
+padding:10px 0;
 max-width:70%;
 margin-left:150px;
 @media (max-width: 800px){
@@ -116,8 +117,17 @@ function Project(props){
                 </ProjectTitleContainer>
             </ProjectsHeaderContainer>
             <ProjectContentContainer>
-                <ProjectContent>{props.decription}</ProjectContent>
-                <ProjectContent>{props.detail}</ProjectContent>
+                <ProjectContent>
+                    {props.companyLink? ( <a href={props.companyLink} style={{color:"#d2818f"}} >{props.name}</a>):( <a href={props.companyLink} >{props.name}</a>)}
+                   {props.decription}
+                </ProjectContent>
+                <ProjectContent>
+                    {props.detail}
+                    <a href={props.apiLink} style={{ marginRight: "5px", marginLeft: "5px",color:"#d2818f" }}>
+                        {props.api}
+                    </a>
+                    {props.detail2}
+                </ProjectContent>
             </ProjectContentContainer>
             <ProjectLinkContainer>
                 <ProjectLink href={props.demo}>Live demo</ProjectLink>
