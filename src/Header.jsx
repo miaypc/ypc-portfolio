@@ -54,7 +54,7 @@ function Header() {
         </a>
       </LogosContainer>
       <Intro>
-      <Name>Mia Yin</Name>
+      <Name>Pingcheng Yin</Name>
       <TextContainer>
       <Text>I am a <Strong >Frontend Developer</Strong>, and I used to work in marketing and as an executive assistant. My education background is in finance and marketing. My current focus is on building interactive applications with <Strong>Javascript</Strong> and <Strong>React</Strong>.</Text>
       </TextContainer>
